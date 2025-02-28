@@ -1,0 +1,272 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url("http://fonts.cdnfonts.com/css/aharoni");
+@import url("http://fonts.cdnfonts.com/css/ocr a extended");
+@import url("http://fonts.cdnfonts.com/css/Montserrat");
+
+body{
+    margin: auto;
+}
+
+.Titre-equipe h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 60px;
+    font-family: "Montserrat";
+}
+
+footer {
+    height: 15vh;
+    background-color: rgba(255, 255, 255, 0.501);;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+
+
+.Histoire{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:10vh;
+    margin-left: 100px;
+}
+
+.bulle_Histoire {
+    margin-top: 730px;
+    height: 65vh;
+    background-color: rgba(255, 255, 255, 0.501);
+    color: #333;
+    padding: 20px 25px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 460px;
+    font-family: "ocr a extended";
+    font-size: 23px;
+    font-weight: 700;
+    position: relative;
+}
+
+.barre-verticale {
+    margin-top: 425px;
+    width: 4px;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 40.5%;
+    top: 0;
+    transform: translateX(0);
+}
+
+.Présentation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:0vh;
+    margin-left: 800px;
+    margin-bottom: 200px; /* Ajoute de l’espace entre chaque bloc */
+}
+/*#d7c0c0;*/
+.bulle {
+    margin-left: 60px;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.501);
+    color: #333;
+    padding: 20px 25px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.image-rond {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-rond img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.Top-page{
+    background: url(../Image-Site-Web/1920x1200-px-artwork-Moon-planet-science-fiction-space-art-677385-wallhere.com.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.Top-page h1 {
+    font-size: 55px;
+    color: ghostwhite;
+    padding: 80px 100px;
+    margin-right: 200px;
+    font-family: "ocr a extended";
+
+}
+header{
+    background-color:rgba(255, 255, 255, 0.501);
+    display: flex;
+    align-items: center;
+}
+
+nav.nav{
+    margin-left: 200px;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;  
+}
+nav.nav li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "ocr a extended";
+    font-size: 18px;
+    list-style: none;
+    color: black;
+}
+
+nav.nav li {
+    list-style: none;
+}
+header img{
+    width: 240px;
+}
+/*    background: linear-gradient(to right, rgb(16, 36, 73), rgb(135, 146, 170));*/
+
+@keyframes spaceGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.L-équipe{
+    margin: 0;
+    background: linear-gradient(to right, rgb(16, 36, 73), rgb(135, 146, 170));
+    background-size: 300% 300%;
+    height: 199vh;
+}
+.Titre-equipe{
+    font-family: "aharoni";
+    color: black;
+    font-size: 36px;
+    padding: 80px 320px
+}
+/* Bio */
+
+.L-équipe header{
+    height: 12vh;
+}
+
+
+/*.Installation h2 a{}*/
+
+
+.carousel {
+    position: relative;
+    max-width: 900px;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.Installation-page{
+    background: linear-gradient(to right, rgb(16, 36, 73), rgb(135, 146, 170));
+    background-size: 300% 300%;
+    height: 200vh;
+}
+
+.Installation{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-install:hover {
+    background-color: #002850;
+    transform: scale(1.1);
+}
+
+.btn-install{
+    background-color: rgba(255, 255, 255, 0.501);
+    color: white;
+    padding: 20px 40px;
+    font-size: 60px;
+    font-family: "aharoni";
+    height: 24vh;
+    width: 580px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.Ressources-Pages h2{
+    font-size: 40px;
+    margin-left: 680px;
+}
+
+.Outils h2{
+    margin-left: 720px;
+}
+
+.Docs{
+    list-style: none;
+    margin-left: 310px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.Docs img{
+    height: 20vh;
+}
+
+    /*background-color: rgba(213, 190, 190, 0.501); Au cas où.*/
+.Ressources-Pages{
+    background: linear-gradient(to right, rgb(16, 36, 73), rgb(135, 146, 170));
+    background-size: 300% 300%;
+    height: 100vh;
+}
+.Outils img{
+    height: 25vh;
+}
+
+.liste-logo-outils{
+    align-items: center;
+    margin-left: 215px;
+    width: 1200px;
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
