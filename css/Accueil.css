@@ -1,0 +1,83 @@
+body {
+    background: url(../Image-Site-Web/1920x1200-px-artwork-Moon-planet-science-fiction-space-art-677385-wallhere.com.jpg);
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(8, 18, 47, 0.6);
+    display: flex;
+    flex-direction: column; /* d'abord la ligne (logo+boutons), ensuite le texte */
+    align-items: center;
+    padding: 20px;
+    height: 12vh;
+}
+
+.Haut {
+    display: flex;
+    align-items: center; /* Aligné verticalement */
+    gap: 00px; /* Met un espace raisonnable entre logo et boutons */
+    width: auto; /* Pas besoin de 100% ici */
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 130px; /* ajuste si besoin */
+}
+
+.Sans-logo p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.logo {
+    margin-right: 200px; /* Décale le logo vers la gauche */
+}
+
+.Sans-logo p {
+    margin-top: 0px; /* réduit l'espace entre boutons et texte */
+}
+
+nav.Boutons {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+nav.Boutons a {
+    text-decoration: none;
+    /* color: white; */
+    color: #e0e6f8; /* blanc bleuté pour rester doux */
+    background-color: #192645; /* bleu profond mais pas agressif */
+    /* background-color:#2A1B67; */
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 725px;
+    text-align: center;
+    background-color: #192645ba; /* Noir bleuté légèrement transparent */
+    color: #d0d8f0; /* Texte légèrement bleuté, moins blanc vif */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 65px;
+    color: #ffffff;
+    /*padding: 80px 100px;
+    margin-right: 200px*/;
+    padding: 180px;
+    font-family: "ocr a extended";
+}

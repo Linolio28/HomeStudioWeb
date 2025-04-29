@@ -1,0 +1,178 @@
+/*
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  
+    background: linear-gradient(to right, #5476af, #4f4fac);
+    color: white;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .synopsis {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .member {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .member img:hover {
+    transform: rotate(5deg) scale(1.1);
+    filter: brightness(1.2);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+  }
+
+      /* Biographie supplémentaire cachée par défaut 
+      .bio {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(43, 59, 87, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+        display: none;
+        color: white;
+        font-size: 0.9rem;
+        text-align: left;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+  
+      /* Affichage de la biographie au survol 
+      .member:hover .bio {
+        display: block;
+        opacity: 1;
+      }
+*/
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95em;
+  color: #555;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}

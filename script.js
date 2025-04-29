@@ -1,4 +1,3 @@
-
 const imagesContainer = document.querySelector('.carousel-images');
         const images = document.querySelectorAll('.carousel img');
         const prevButton = document.querySelector('.prev');

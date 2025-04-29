@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+}
+
+.Page-Equipe {
+    background: linear-gradient(to right, #1e2a4a, #151a30); /* Bleus plus doux et profonds */
+    /* background: linear-gradient(to right, rgb(36, 50, 103), rgb(30, 26, 45)); */
+    height: 145vh;
+}
+
+.Page-Ressources {
+    background: linear-gradient(to right, #1e2a4a, #151a30); /* Bleus plus doux et profonds */
+    /* background: linear-gradient(to right, rgb(36, 50, 103), rgb(30, 26, 45)); */
+    height: 243vh;
+}
+
+.Page-Installation {
+    background: linear-gradient(to right, #1e2a4a, #151a30); /* Bleus plus doux et profonds */
+    /* background: linear-gradient(to right, rgb(36, 50, 103), rgb(30, 26, 45)); */
+    height: 322vh;
+}
+
+
+header {
+    background-color: rgba(10, 15, 30, 0.6);
+    display: flex;
+    flex-direction: column; /* d'abord la ligne (logo+boutons), ensuite le texte */
+    align-items: center;
+    padding: 20px;
+    height: 22vh;
+}
+
+.Haut {
+    display: flex;
+    align-items: center; /* Aligné verticalement */
+    gap: 00px; /* Met un espace raisonnable entre logo et boutons */
+    width: auto; /* Pas besoin de 100% ici */
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 130px; /* ajuste si besoin */
+}
+
+.Sans-logo p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.logo {
+    margin-right: 230px; /* Décale le logo vers la gauche */
+}
+
+.Sans-logo p {
+    margin-top: 0px; /* réduit l'espace entre boutons et texte */
+}
+
+nav.Boutons {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+nav.Boutons a {
+    text-decoration: none;
+    /* color: white; */
+    color: #e0e6f8; /* blanc bleuté pour rester doux */
+    background-color: #192645; /* bleu profond mais pas agressif */
+    /* background-color:#2A1B67; */
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+/* nav.Boutons a:hove.Synopsis {
+    background-color: #151a30;      /* Couleur de fond sombre 
+    text-align: center;             /* Centrer le texte 
+    padding: 20px 50px;             /* Espacement plus équilibré à l'intérieur du bloc 
+    margin-top: 100px;              /* Espacement au-dessus 
+    display: flex;                  /* Utilisation de Flexbox pour aligner les éléments 
+    flex-direction: column;         /* Aligner les éléments verticalement 
+    align-items: center;            /* Centrer les éléments horizontalement 
+    justify-content: center;        /* Centrer les éléments verticalement 
+    border-radius: 10px;            /* Coins arrondis (optionnel) 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour un effet de profondeur 
+}r {
+    background-color: #24356a; /* effet hover un peu plus sombre 
+    /* background-color: #1d1250; effet hover plus foncé 
+} */
+
+header p {
+    margin-top: 60px;
+    font-size: 25px;
+    color: #d0d8f0; /* Texte légèrement bleuté, moins blanc vif */
+    /* color: white; */
+}
+
+.Synopsis {
+    width: 1000px;
+    background-color: #656979;      /* Couleur de fond sombre */
+    text-align: center;             /* Centrer le texte */
+    padding: 20px 50px;             /* Espacement plus équilibré à l'intérieur du bloc */
+    margin-left: 300px;
+    margin-top: 100px;              /* Espacement au-dessus */
+    display: flex;                  /* Utilisation de Flexbox pour aligner les éléments */
+    flex-direction: column;         /* Aligner les éléments verticalement */
+    align-items: center;            /* Centrer les éléments horizontalement */
+    justify-content: center;        /* Centrer les éléments verticalement */
+    border-radius: 10px;            /* Coins arrondis (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour un effet de profondeur */
+    font-size: 16px;
+}
+
+.Equipe {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.Membre img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.member img:hover {
+    transform: rotate(5deg) scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+.Membre {
+    text-align: center;
+    color: #d0d8f0; /* Texte légèrement bleuté, moins blanc vif */
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.1s, box-shadow 0.3s;
+    position: relative; /* Pour le positionnement relatif des éléments internes */
+    max-width: 220px; /* Limiter la largeur */
+    overflow: hidden; /*Éviter que le texte dépasse du conteneur */
+  }
+
+.Membre:hover {
+    transform: scale(1.00001);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+
+.bio {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* Au départ */
+.short-bio {
+    display: block;
+}
+
+.full-bio {
+    display: none;
+    margin-top: 5px;
+}
+
+.Membre:hover .full-bio {
+    display: block;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgba(10, 15, 30, 0.6); /* Noir bleuté légèrement transparent */
+    color: #d0d8f0; /* Texte légèrement bleuté, moins blanc vif */
+}
+
+.Outils{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.boite img {
+    height: 120px;
+    object-fit: contain;
+}
+
+.boite {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#d0d8f0; /* Texte légèrement bleuté, moins blanc vif */
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour un effet de profondeur */
+    background-color: #1c2d53; /* bleu profond mais pas agressif */
+    width: 300px;
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.boite:hover {
+    transform: translateY(-10px) scale(1.05); /* Remonte et grandit légèrement */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Ombre plus grande */
+    background-color: #243d77; /* Légèrement plus clair au survol */
+}
+
+.Documents {
+    display: flex;
+    align-items: center;    /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    font-size: 35px;
+    text-align: center;
+    border-radius: 15px;
+    border: 4px solid #d0d8f0; /* Couleur et épaisseur du contour */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour un effet de profondeur */
+    color:#d0d8f0;
+    background-color:#1c2d53;
+    padding: 1rem;
+    height: 50px;
+}
+
+.Texte {
+    margin-top: 45px;
+    font-size: 40px;
+    text-align: center;
+    color: #d0d8f0;
+    font-weight: 1000;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+}
+
+.image img{
+    height: 400px;
+    border-radius: 20px; /* Coins arrondis pour l'image*/
+}
+
+.titre {
+    text-align: center;
+    color: #d0d8f0;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.promotion {
+    color: #d0d8f0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 900px;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Conteneur du texte et bouton */
+.Téléchargement {
+    color: #d0d8f0; 
+    font-size: 60px; 
+    font-weight: 700; 
+    text-align: center;
+    padding: 30px 0; /* Espacement autour */
+}
+
+/* Style du texte */
+.Téléchargement p {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    text-transform: uppercase; /* Pour un effet plus dynamique */
+    margin-bottom: 20px; /* Espacement entre le texte et le bouton */
+    letter-spacing: 2px; /* Espacement des lettres */
+    color: #d0d8f0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style du bouton Télécharger */
+.installation {
+    margin-top: 45px;
+    padding: 20px 40px; /* Augmenter l'espacement interne du bouton (vertical et horizontal) */
+    font-size: 25px; /* Augmenter la taille du texte */
+    background-color: #3498db; 
+    color: white; 
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 30px; 
+    cursor: pointer; /* Pointer lorsque survolé */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animations au survol */
+}
+
+/* Animation de survol pour le bouton */
+.installation:hover {
+    background-color: #2980b9; 
+    transform: scale(1.2); /* Légèrement plus grand quand survolé */
+}
+/* Effet de focus pour le bouton */
+.installation:focus {
+    outline: none; /* Retirer la bordure de focus par défaut */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Ajoute un effet lumineux autour du bouton */
+}
