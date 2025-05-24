@@ -241,7 +241,6 @@ footer {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    
 }
 
 .Documents:hover {
@@ -318,6 +317,8 @@ footer {
     font-weight: 700; 
     text-align: center;
     padding: 30px 0; /* Espacement autour */
+    border-radius: 20px;
+    /* background-color: #1c2d53; */
 }
 
 /* Style du texte */
@@ -350,6 +351,7 @@ footer {
     border-radius: 30px; 
     cursor: pointer; /* Pointer lorsque survolé */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Animations au survol */
+    text-decoration: none;
 }
 
 /* Animation de survol pour le bouton */
